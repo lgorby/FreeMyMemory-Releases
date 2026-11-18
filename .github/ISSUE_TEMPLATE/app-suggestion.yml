@@ -1,0 +1,40 @@
+name: Suggest a program
+description: Ask for a program FreeMyMemory doesn't know yet to be added to its list.
+title: "Add to list: "
+labels: ["app suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Anyone on the internet can read it once you press Create.
+
+        FreeMyMemory's **Suggest this program** filled in the fields below from the program's file. Before you send it,
+        read every field and remove anything personal: your name, your user name, a folder path, a company or
+        computer name you'd rather keep private. You can also change any field, or close this page and send nothing.
+  - type: input
+    id: exe
+    attributes:
+      label: Exe name
+      description: The program's file name only, never a folder path.
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: The description in the program's file, or "(not given)".
+  - type: input
+    id: company
+    attributes:
+      label: Company
+      description: The company named in the program's file, or "(not given)".
+  - type: input
+    id: kind
+    attributes:
+      label: Kind
+      description: process, service or startup.
+  - type: textarea
+    id: about
+    attributes:
+      label: What does it do? (optional)
+      description: If you know, a sentence about what the program is for. Leave it empty if you're not sure.
