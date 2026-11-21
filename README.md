@@ -4,7 +4,9 @@ This repository holds the **downloads** of FreeMyMemory, a free Windows app that
 
 ## Download
 
-Open the [latest release](https://github.com/lgorby/FreeMyMemory-Releases/releases/latest) and, under **Assets**, click **FreeMyMemory.exe**. There is nothing to install: save it anywhere and double-click it. Each release lists one file, `FreeMyMemory.exe`, and its SHA-256 checksum. Always take a download from a release on this page or from freemymemory.com, never from anywhere else.
+Open the [latest release](https://github.com/lgorby/FreeMyMemory-Releases/releases/latest) and, under **Assets**, click **FreeMyMemory.exe**. There is nothing to install: save it in a folder of its own, for example `C:\Tools\FreeMyMemory` (not in a OneDrive folder: OneDrive doesn't run in Safe Mode), and double-click it. Each release lists one file, `FreeMyMemory.exe`, and its SHA-256 checksum. Always take a download from a release on this page or from freemymemory.com, never from anywhere else.
+
+FreeMyMemory isn't code-signed. On some Windows 11 PCs with **Smart App Control** On, Windows may block it, and then it can't be allowed on that PC. To see whether Smart App Control is On: **Windows Security** → **App & browser control** → **Smart App Control settings**. The release notes say what to do about the other warnings.
 
 The "Source code" files GitHub adds to every release contain only this README and the licence, not the program.
 
